@@ -1,4 +1,4 @@
-package Observer;
+package design_patterns.src.com.carlos.designpatterns.Observer;
 
 public class Stock extends Subject{
     private float stockPrice;
