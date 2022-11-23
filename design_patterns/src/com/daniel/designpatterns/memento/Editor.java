@@ -6,10 +6,12 @@ public class Editor {
     private int fontSize;
 
     public EditorState createState(){
-        return new EditorState(content);
+        return new EditorState(content, font, fontSize);
     }
     public void restore(EditorState state){
         content=state.getContent();
+        font=state.getFont();
+        fontSize=state.getFontSize();
     }
     public void setContent(String content) {
         this.content = content;
@@ -29,4 +31,5 @@ public class Editor {
     public void setFontSize(int fontSize) {
         this.fontSize = fontSize;
     }
+
 }
